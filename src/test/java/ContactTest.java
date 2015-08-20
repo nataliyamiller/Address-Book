@@ -17,4 +17,6 @@ public class ContactTest {
     assertTrue(testContact.all().size() == testContact.getId());
   }
 
+  
+
 }
