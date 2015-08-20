@@ -1,0 +1,8 @@
+<h1> All phone numbers </h1>
+<ul>
+#foreach ($phone in $phones)
+  <li><a href="/phones/$phone.getId()">$phone.getDescription()</a></li>
+#end
+</ul>
+
+<a href="tasks/new">Add New Phone Number</a>

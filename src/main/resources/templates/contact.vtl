@@ -1,0 +1,8 @@
+<h3>Here are all the phone numbers for this contact:</h3>
+
+#foreach($phone in $contact.getPhones())
+  <h3>$phone.getDescription()</a></h3>
+#end
+
+<a href="/contacts/$contact.getId()/phones/new">Add a new phone number</a>
+<a href="/">Return to Main Page</a>

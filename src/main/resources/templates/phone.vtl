@@ -1,0 +1,10 @@
+#if ($phone)
+  <h1>$phone.getDescription()</h1>
+#else
+  <h1> Phone number not found </h1>
+#end
+
+<ul>
+  <li><a href="/phone/new">Add another phone number</a></li>
+  <li><a href="/phones">All phone numbers</a></li>
+</ul>

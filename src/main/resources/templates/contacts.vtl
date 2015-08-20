@@ -1,0 +1,10 @@
+<h1>View categories</h1>
+hi
+#if($contacts.isEmpty().toString())
+  Please add a contact.
+#else
+hielse
+  #foreach($contact in $contacts)
+    <h3><a href="/contacts/$contact.getId()">$contact.getName()</a></h3>
+  #end
+#end
