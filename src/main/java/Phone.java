@@ -21,4 +21,8 @@ public class Phone{
     return "(" + mAreaCode + ")" + mNumber;
   }
 
+  public static ArrayList<Phone> all() {
+    return instances;
+  }
+
 }
