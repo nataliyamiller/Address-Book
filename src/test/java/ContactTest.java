@@ -11,4 +11,10 @@ public class ContactTest {
     assertEquals(true, testContact instanceof Contact);
   }
 
+  @Test
+  public void getId_returnsContactId() {
+    Contact testContact = new Contact ("Michael", "Smith");
+    assertTrue(testContact.all().size() == testContact.getId());
+  }
+
 }
